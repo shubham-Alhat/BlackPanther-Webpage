@@ -1,0 +1,364 @@
+
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+body {
+    background: linear-gradient(to left, #4B2C66, #1E2246, #336633); /* Gradient from right (purple) to left (green) */
+
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: transparent;
+    
+    
+    
+
+}
+
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #F0E68C;
+
+}
+
+header ul {
+    display: flex;
+
+}
+
+header ul li a{
+    font-weight: 600;
+    margin-left: 30px;
+    font-size: 15px;
+    color: #F0E68C;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease ;
+    
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#menu {
+    font-size: 30px;
+    display: none;
+    color: #F0E68C;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    header ul{
+      display: none;
+    }
+    #menu{
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+
+  }
+
+main {
+    min-height: calc(100vh - 68.4px);
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.side_logo {
+    min-height: 100%;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.side_logo i {
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.side_logo i:hover {
+    box-shadow: 0 4px 8px rgba(25, 24, 25, 0.94);
+}
+
+.heroText {
+    min-height: 100%;
+    min-width: auto;
+    padding: 3%;
+
+}
+
+.heroText h5 {
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
+     color: #E8E8E8 ;
+}
+
+.heroText h4 {
+    font-size: clamp(1.3rem, 2vw, 1.3rem);
+    margin-top: 35px;
+    color: #E8E8E8 ;
+}
+
+.heroText h1 {
+    font-family: "Ubuntu",sans-serif;
+    font-size: 6rem;
+    margin-top: 15px;
+    color: #E8E8E8 ;
+}
+
+.heroText p {
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
+    margin-top: 15px;
+    color: #CCCCCC;
+}
+
+.heroText button {
+    font-size: 1.2rem;
+    margin-top: 35px;
+    background: linear-gradient(45deg, #6a1b9a, #8e24aa); /* Gradient color for the button */
+    color: #FFFFFF; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    margin-left: 15px;
+    font-weight: 300; 
+    cursor: pointer; 
+    
+    
+    transition: all 0.3s ease;
+}
+
+.heroText button:hover {
+    box-shadow: 0 4px 8px rgba(25, 24, 25, 0.94); /* Shadow effect */
+}
+
+
+.heroText button i {
+    padding-right: 10px;
+}
+
+.heroImg {
+    height: 400px;
+    min-width: 400px;
+    
+}
+
+.heroImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px; */
+    border-radius: 20px;
+    
+    
+}
+
+@media (max-width:1100px) {
+    .side_logo {
+        display: none;
+    }
+    
+    .heroText h5 {
+        font-size: 1.1rem;
+    }
+    
+    .heroText h4 {
+        font-size: 1.2rem;
+        margin-top: 35px;
+    }
+    
+    .heroText h1 {
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 5rem;
+        margin-top: 15px;
+    }
+    
+    .heroText p {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+    
+    .heroText button {
+        font-size: 1.1rem;
+        padding: 10px 18px;
+        border-radius: 28px;
+        margin-top: 35px;
+    }
+    
+    .heroText button i {
+        padding-right: 10px;
+    }
+    
+    .heroImg {
+        height: 380px;
+        min-width: 380px;
+        
+    }
+    
+}
+
+@media (max-width:400px){
+    .heroText{
+        padding: 2%;
+    }
+    .heroText h5 {
+        font-size: 1.05rem;
+    }
+    
+    .heroText h4 {
+        font-size: 1.1rem;
+        margin-top: 30px;
+    }
+    
+    .heroText h1 {
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 4.5rem;
+        margin-top: 12px;
+    }
+    
+    .heroText p {
+        font-size: 1.05rem;
+        margin-top: 12px;
+    }
+    
+    .heroText button {
+        font-size: 1.05rem;
+        padding: 10px 18px;
+        border-radius: 28px;
+        margin-top: 30px;
+    }
+    
+    .heroText button i {
+        padding-right: 10px;
+    }
+    
+    .heroImg {
+        height: 375px;
+        min-width: 350px;
+
+    }
+}
+
+@media (max-width:350px) {
+    .heroText h1 {
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 4.3rem;
+        margin-top: 11px;
+    }
+
+    .heroImg {
+        height: 375px;
+        min-width: 340px;
+
+    }
+}
+
+@media (min-width: 800px) and (max-width: 920px) and (min-height: 1150px) and (max-height: 1370px){
+    .heroText h5 {
+    font-size: 1.7rem;
+    }
+
+    .heroText h4 {
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+
+    .heroText h1 {
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 8rem;
+        margin-top: 20px;
+    }
+
+    .heroText p {
+        font-size: 1.5rem;
+        margin-top: 18px;
+    }
+
+    .heroText button {
+        font-size: 1.7rem;
+        padding: 9px 18px;
+        border-radius: 28px;
+        margin-top: 35px;
+    }
+
+    .heroText button i {
+        padding-right: 10px;
+    }
+
+    .heroImg {
+        height: 500px;
+        min-width: 500px;
+       
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1050px) and (min-height: 1300px) and (max-height: 1370px) {
+
+    .heroText h5 {
+        font-size: 1.9rem;
+        }
+    
+        .heroText h4 {
+            font-size: 2.5rem;
+            margin-top: 38px;
+        }
+    
+        .heroText h1 {
+            font-family: 'Ubuntu',sans-serif;
+            font-size: 9rem;
+            margin-top: 20px;
+        }
+    
+        .heroText p {
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+    
+        .heroText button {
+            font-size: 1.9rem;
+            padding: 12px 25px;
+            border-radius: 28px;
+            margin-top: 35px;
+        }
+    
+        .heroText button i {
+            padding-right: 17px;
+        }
+    
+        .heroImg {
+            height: 580px;
+            min-width: 580px;
+            
+        }
+}
+
+
+
+
